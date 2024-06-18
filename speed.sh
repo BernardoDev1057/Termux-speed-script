@@ -2,13 +2,17 @@
 #!/bin/sh
 #!/usr/bin/env bash
 
+# Permissões de armazenamento
 termux-setup-storage &&
+# Atualizações do sistema
 pkg upgrade &&
 pkg update &&
-pkg install curl htop wget nano git gh php sqlite nodejs &&
+# Instalação de ferramentas essenciais
+pkg install curl htop wget nano git gh php sqlite3 nodejs &&
 npm install -g express-generator &&
 npm install -g nodemon
 
+# Alias úteis
 alias ll='ls -la'
 alias gs='git status'
 alias commit='git commit -m'
@@ -30,4 +34,4 @@ echo "Git configurado com:"
 git config --global user.name
 git config --global user.email
 
-echo "Termux speed scrpit Finalizado"
+echo "Termux speed script finalizado"
