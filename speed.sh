@@ -16,6 +16,8 @@ npm install -g nodemon
 alias ll='ls -la'
 alias gs='git status'
 alias commit='git commit -m'
+alias php-server='php -S 0.0.0.0:3000'
+alias cls='clear'
 
 echo "Vamos configurar o git"
 
