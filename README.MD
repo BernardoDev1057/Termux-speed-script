@@ -11,7 +11,7 @@ Certifique-se de que o Termux esteja instalado e configurado corretamente.
 1. Clone este repositório no Termux:
    ```bash
    git clone https://github.com/BernardoDev1057/Termux-speed-script.git
-   cd seu-repositorio
+   cd Termux-speed-script
 
 2. Execute o script:
    ````bash
