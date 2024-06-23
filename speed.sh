@@ -12,12 +12,21 @@ pkg install curl htop wget nano git gh php sqlite3 nodejs &&
 npm install -g express-generator &&
 npm install -g nodemon
 
+# Criação do arquivo .bashrc e inclusão dos aliases
+echo "Criando .bashrc com os aliases úteis..."
+
+cat <<EOT >> ~/.bashrc
+
 # Alias úteis
 alias ll='ls -la'
 alias gs='git status'
 alias commit='git commit -m'
 alias php-server='php -S 0.0.0.0:3000'
 alias cls='clear'
+EOT
+
+# Carregar o arquivo .bashrc para que os aliases fiquem disponíveis imediatamente
+source ~/.bashrc
 
 echo "Vamos configurar o git"
 
