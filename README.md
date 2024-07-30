@@ -22,5 +22,12 @@ O script configura ferramentas essenciais para desenvolvimento no Termux.
 Inclui configuração inicial do Git, solicitando nome e email do usuário.
 Personalize os aliases e configurações do Git conforme necessário.
 
+### Agora conta com a Ferramenta para leituras do README.md basta digitar no diretorio do seu projeto
+
+```
+ lermd README.md ou o nome do arquivo.md
+
+```
+
 BernardoDev1057
 

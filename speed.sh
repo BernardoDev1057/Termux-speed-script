@@ -8,7 +8,7 @@ termux-setup-storage &&
 pkg upgrade &&
 pkg update &&
 # Instalação de ferramentas essenciais
-pkg install curl htop wget nano git gh php sqlite3 nodejs &&
+pkg install curl htop wget nano git gh php sqlite3 nodejs pandoc lynx &&
 npm install -g express-generator &&
 npm install -g nodemon
 
@@ -23,6 +23,9 @@ alias gs='git status'
 alias commit='git commit -m'
 alias php-server='php -S 0.0.0.0:3000'
 alias cls='clear'
+lermd() {
+   pandoc -f markdown $1 | lynx -stdin
+}
 EOT
 
 # Carregar o arquivo .bashrc para que os aliases fiquem disponíveis imediatamente
